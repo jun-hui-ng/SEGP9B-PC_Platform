@@ -1,0 +1,165 @@
+<?php 
+session_start();
+require_once "pc_login_signup_Function.php";
+?>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>homepage</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="page1.css">
+<script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg nav-back fixed-top" 
+    id="mainNav">
+      <div class="container">
+          <a class="navbar-brand" href="#">MedPal</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button"
+           data-toggle="collapse" data-target="#navbarResponsive" 
+           aria-controls="navbarResponsive" aria-expanded="false" 
+           aria-label="Toggle navigation"><i class="fas fa-syringe fa-2x"></i>
+           </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" 
+                    href="#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link" 
+                    href="#about">My Account</a></li>
+                  <li class="nav-item"><a class="nav-link" 
+                    href="#signup">Help</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+   
+<!-- End Header -->    
+   <!-- ======= Hero Section ======= -->
+   <section id="hero" class="d-flex align-items-center">
+    <div class="container text-center position-relative">
+      <h1>Your 24/7 Medical Pal</h1>
+      <h2>Doctor's Version <h2>
+     </div>
+  </section><!-- End Hero -->
+ 
+   <!-- ======= Services Section ======= -->
+   <section id="services" class="services mt-5 mb-3 py-3">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="text-center">Services</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="service shadow">
+            <div class="icon">
+                <i class="fas fa-heart"></i>
+            </div>
+            <h4><a href="">Medication</a></h4>
+            <p>check to update following patient's reminder</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="service c shadow">
+            <div class="icon">
+                <i class="fas fa-heart"></i>
+            </div>
+            <h4><a href="displayPatient.php">Appointment</a></h4>
+            <p>check the upcoming appointment with patient</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+          <div class="service shadow">
+            <div class="icon">
+                <i class="fas fa-heart"></i>
+            </div>
+            <h4><a href="">Medical Record</a></h4>
+            <p>check patient's medical record and personal info</p>
+          </div>
+        </div>
+    </div>
+</section><!-- End Services Section -->
+<br>
+<br>
+<br>
+<br>
+<br>  
+
+ 
+
+   <!-- ======= Contact Section ======= -->
+   <section class="contact">
+    <div class="container">
+
+      <div class="section-title text-center mt-5">
+        <h2>Contact</h2>
+        <p>Send the developer team a comment. We would like to hear from you.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-6">
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="contact-box">
+                <i class="fas fa-map-signs"></i>
+                <h3>Develop Team</h3>
+                <p>SEGP Group 9B</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="contact-box mt-4">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Us</h3>
+                <p>medpal@segp9B.com</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="contact-box mt-4">
+                <i class="fas fa-phone"></i>
+                <h3>Call Us</h3>
+                <p>+1234 5678</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+       
+
+    </div>
+  </section><!-- End Contact Section -->
+
+  <!-- Footer-->
+  <footer class="footer py-4 mt-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright © Your Website 2021</div>
+             <div class="col-lg-4 text-lg-right">
+              <a class="mr-3 text" href="#!">Privacy Policy</a>
+              <a href="#!"class="text">Terms of Use</a></div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+

@@ -1,0 +1,144 @@
+.appointment{
+    position: absolute;
+    top:1px;
+    left:100px;
+  }
+
+
+
+.table{
+	table-layout: auto;
+	border-collapse: collapse;
+	position:absolute;
+	top:80px;
+	left:100px;
+	font-size:20px;
+      }
+
+.table th{
+	background-color: #808080;
+	color: #FFF;
+	padding: 4px 70px 4px 2px;
+	text-align:left;
+	
+        }
+
+.table td{
+	border: 1px solid #e3e3e3;
+	padding: 4px 4px;
+	}
+
+
+.table tr:nth-child(odd) td{
+			    background-color: #E0FFFF;
+			   }
+
+
+.show-btn{
+	  position:absolute;
+	  top: 40px;
+      left: 830px;
+	  font-size: 100%;
+	  font-weigt: 50%;
+	  transform:translate(-50%, -50%);
+	  }
+
+
+.show-btn{
+	  padding:10px;
+	  font-size: 20px;
+	  font-weigt: 500;
+	  color:white;
+	  cursor: pointer;
+	  background: #808080;
+	  }
+
+
+
+input[type="checkbox"]{
+			display: none;
+		       }
+
+#show:checked ~ .container{display: block;}
+
+.container{
+	   display:none;
+	   width: 350px;
+	   background: #FFFFFF
+	   }
+
+.container{
+	   position: absolute;
+
+	   }
+
+
+.container .close-btn{
+			position: absolute;
+			top: 20px;
+			left: 1200px;
+			font-size: 25px;
+			cursor: pointer;
+		      }	
+
+.close-btn:hover{
+		 color: red;
+		 }
+
+h2{
+   text-align: center;
+   color: white;
+   }
+
+form{
+     position: absolute;
+     top:20px;
+     left: 930px;
+     margin: 20px;
+     }
+
+label{
+      display: block;
+      color: black;
+      font-size: 18px;
+      margin-top: 10px;
+      }
+
+input{
+	display: block;
+	width: 90%;
+	background: #b7b7b2
+	border: black;
+	outline: black;
+	border-bottom: 1px solid black;
+	padding: 5px 35px 5px 35px;
+      }
+
+.submit{
+	position: relative;
+	left:45px;
+	display: block;
+	width: 70%;
+	padding: 5px 10px 5px 10px;
+	border: none;
+	outline: none;
+	background: #00FFFF;
+	color: #808080;
+	font-size: 18px;
+	cursor: pointer;
+	margin-top: 20px;
+	}
+
+a{
+  text-decoration: none;
+  }
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {color: #f1f1f1;}
+
+
+
+
+
+
+

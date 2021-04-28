@@ -1,0 +1,49 @@
+<?php 
+session_start();
+require_once "pc_login_signup_Function.php";
+?>
+
+
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" href="editAppt.css">
+  </head>
+
+
+
+<body>
+<div class="container">
+	<div class="header">
+		<h2>Edit Record</h2>
+	</div>
+	<form id="form" class="form" action="pc_editAppt.php" method="post">
+  		<div class="form-control">
+			<label>Date:</label>
+  			<input type="date" name="date" required><br>
+		</div>
+
+		<div class="form-control">
+  			<label >Time:</label>
+  			<input type="time" name="time" required><br>
+		</div>
+
+		<div class="form-control">
+			<label >Venue:</label>
+  			<input type="text" name="venue" required><br>
+		</div>
+
+		<div class="form-control">
+  			<label for="lname"> Purpose:</label>
+  			<input type="text" name="purpose" required><br>
+		</div>
+
+		<div class="form-control">
+			<label for="lname"> Remark:</label>
+  			<input type="text" name ="remark" required>
+		</div>
+		<input type="submit" name="edit" value="Edit">		
+	</form>
+	</div>
+
+
+</body>

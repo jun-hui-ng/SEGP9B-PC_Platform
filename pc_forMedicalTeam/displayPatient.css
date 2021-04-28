@@ -1,0 +1,114 @@
+.h1{
+   Position: absolute;
+   top: 10px;
+   left: 200px;
+    }
+
+
+.team {
+    background: #fff;
+  }
+
+.addpatient{
+	Position: absolute;
+	top: 1150px;
+	left: 120px;
+	}
+
+
+.show-btn{
+	  padding:4px;
+	  font-size: 20px;
+	  font-weigt: 500;
+	  color:black
+	  cursor: pointer;
+	  background: #b7b7b2;
+	  }
+
+.show-btn{
+	  position: absolute;
+	  left: 500px;
+	  top: 1000px
+    	  font-size: 100%;
+	  font-weigt: 50%;
+	  transform:translate(-50%, -50%);
+	  }
+
+input[type="checkbox"]{display: none;}
+
+#show:checked ~ .accessform{display: block;}
+
+.accessform{
+	   display:none;
+	   width: 350px;
+	   background: ;
+	   }
+
+.accessform{
+	   position: absolute;
+	   
+	   }
+
+
+.accessform .close-btn{
+			position: absolute;
+			top: 30px;
+			left: 650px;
+			font-size: 25px;
+			cursor: pointer;
+		      }	
+
+.close-btn:hover{
+		 color: red;
+		 }
+
+h2{
+   text-align: center;
+   color: white;
+   }
+
+form{
+     position: absolute;
+     top: 30px;
+     left: 400px;
+     margin: 20px;
+     }
+
+label{
+      display: block;
+      color: black;
+      font-size: 18px;
+      margin-top: 10px;
+      }
+
+input{
+	display: block;
+	width: 90%;
+	background: #b7b7b2
+	border: black;
+	outline: black;
+	border-bottom: 1px solid black;
+	padding: 5px 65px 5px 65px;
+      }
+
+.submit{
+	
+	display: block;
+	width: 70%;
+	padding: 5px 10px 5px 10px;
+	border: none;
+	outline: none;
+	background: #00FFFF;
+	color: #808080;
+	font-size: 15px;
+	cursor: pointer;
+	margin-top: 20px;
+	}
+
+a{
+  text-decoration: none;
+  color: #0000FF;
+  }
+
+
+

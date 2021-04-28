@@ -1,0 +1,44 @@
+<?php 
+session_start();
+require_once "pc_login_signup_Function.php";
+?>
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="login.css">
+  </head>
+
+  <body>
+  <div class="container">
+	<div class="header">
+		<h2>Login</h2>
+	</div>
+	<form id="form" class="form" action="pc_MTlogin.php" method ="post">
+	
+		<div class="form-control">
+			<label for="username">Email</label>
+			<input type="email" placeholder="Enter your email" id="email" name="email"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			
+		</div>
+		<div class="form-control">
+			<label for="username">Password</label>
+			<input type="password" placeholder="Enter your Password" id="password" name="password" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			
+		</div>
+		
+		<button>Submit</button>
+		<p>No Account yet?<a href="signup.html">Sign Up</a></p>
+	</form>
+  </div>
+  </body>
+</html>
+	
+    

@@ -1,0 +1,441 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+.nav-back{
+    background: rgba(17, 219, 207,0.8);
+    color: #fff;
+}
+.navbar-brand{
+  color: #000;
+}
+.navbar-brand:hover{
+  color: #fff;
+}
+.nav-link{
+  color: #000;
+}
+.nav-link:hover{
+  color:#fff;
+}
+.navbar-toggler{
+  outline: none!important;
+}
+
+   
+ 
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    height: 80vh;
+    background: url("./images/hero.jpg") center center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #hero .container {
+    padding-top: 80px;
+  }
+  
+  #hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+  }
+  
+  #hero h2 {
+    color: #eee;
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  
+  .main-btn {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  
+   .main-btn:hover {
+    background: #11dbcf;
+    border: 2px solid #11dbcf;
+    text-decoration: none;
+    color:#fff;
+  }
+   
+  /*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+ .service {
+    text-align: center;
+    padding: 70px 20px 80px 20px;
+    transition: all ease-in-out 0.3s;
+    background: rgba(17, 219, 207,0.8);
+    box-shadow: 0px 5px 90px 0px rgba(3, 117, 111, 0.63);
+  }
+  
+ .service .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    position: relative;
+    background: #f5f5f5;
+    border-radius: 50px;
+  }
+  
+   .service .icon i {
+    font-size: 32px;
+    transition: 0.5s;
+    line-height: 1;
+    position: relative;
+  }
+  
+   .service h4 {
+    font-weight: 600;
+    margin: 10px 0 15px 0;
+    font-size: 22px;
+  }
+  
+   .service h4 a {
+    color: #000;
+    transition: ease-in-out 0.3s;
+  }
+  
+   .service p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+    .services i{
+    color: #47aeff;
+  }
+ 
+  /*----about -section*/
+  .about-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+  .about-heading {
+    text-transform: uppercase;
+  }
+  
+  .about-heading .about-heading-upper {
+    display: block;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  
+  .about-heading .about-heading-lower {
+    display: block;
+    font-size: 38px;
+    font-weight: 100;
+  }
+  
+  .bg-faded {
+    background-color: rgba(17, 219, 207,0.8);
+  }
+
+  .about-button .btn-color{
+    background: #03a59a;
+    font-weight: bold;
+    color: #fff;
+  }
+  .about {
+    position: relative;
+  }
+  
+  @media (min-width: 992px) {
+    .about .about-img {
+      width: 75%;
+      float: right;
+    }
+    .about .about-text {
+      left: 0;
+      width: 60%;
+      margin-top: 3rem;
+      position: absolute;
+    }
+    .about .about-text .about-button {
+      width: 100%;
+      left: 0;
+      position: absolute;
+      bottom: -2rem;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .about .about-text {
+      width: 45%;
+    }
+  }
+  
+/* ==================================================
+  Medical Camp SEction
+  ================================================== */
+  .camp {
+    background-color: #11dbcf;
+    padding-bottom: 0;
+  }
+  
+  .camp h2 {
+    color: #000;
+    margin-bottom: 25px;
+  }
+  
+  .camp-grid {
+    margin-top: 65px;
+  }
+  
+  .camp-grid .row {
+    margin: 0;
+  }
+  
+  .camp-grid .row > div {
+    padding: 0;
+  }
+  
+  .camp-grid .row > div .card img {
+    width: 100%;
+  }
+  
+  .camp-grid .row > div .card .camp-text {
+    position: absolute;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .camp-grid .row > div .card .camp-text > div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .camp-grid .row > div .card .camp-text .card-title {
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  .camp-grid .row > div .card .camp-text .card-text {
+    color: #fff;
+    opacity: .75;
+    padding: 0 45px;
+  }
+  
+  .camp-grid .row > div .card:hover .camp-text {
+    opacity: 1;
+    visibility: visible;
+  }
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.team {
+    background: #fff;
+  }
+
+.addpatient{
+	Position: absolute;
+	top: 1150px;
+	left: 120px;
+	}
+
+
+.show-btn{
+	  padding:4px;
+	  font-size: 20px;
+	  font-weigt: 500;
+	  color:black
+	  cursor: pointer;
+	  background: #b7b7b2;
+	  }
+
+.show-btn{
+	  position: absolute;
+	  left: 500px;
+	  top: 1000px
+    	  font-size: 100%;
+	  font-weigt: 50%;
+	  transform:translate(-50%, -50%);
+	  }
+
+input[type="checkbox"]{display: none;}
+
+#show:checked ~ .accessform{display: block;}
+
+.accessform{
+	   display:none;
+	   width: 350px;
+	   background: #C0C0C0;
+	   }
+
+.accessform{
+	   position: absolute;
+	   
+	   }
+
+
+.accessform .close-btn{
+			position: relative;
+			bottom: 950px;
+			left: 900px;
+			font-size: 25px;
+			cursor: pointer;
+		      }	
+
+.close-btn:hover{
+		 color: red;
+		 }
+
+h2{
+   text-align: center;
+   color: white;
+   }
+
+form{
+     position: relative;
+     bottom: 1000px;
+     left: 630px;
+     margin: 20px;
+     }
+
+label{
+      display: block;
+      color: black;
+      font-size: 18px;
+      margin-top: 10px;
+      }
+
+input{
+	display: block;
+	width: 90%;
+	background: #b7b7b2
+	border: black;
+	outline: black;
+	border-bottom: 1px solid black;
+	padding: 5px 65px 5px 65px;
+      }
+
+.submit{
+	display: block;
+	width: 90%;
+	padding: 5px 10px 5px 10px;
+	border: none;
+	outline: none;
+	background: #00FFFF;
+	color: #808080;
+	font-size: 18px;
+	cursor: pointer;
+	margin-top: 20px;
+	}
+
+a{
+  text-decoration: none;
+  color: #b7b7b2;
+  }
+
+
+
+
+
+.allPatient{
+	Position: absolute;
+	top: 950px;
+	left: 120px;
+	}
+  
+ /*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact-box {
+   position: relative;
+    left: 280px;
+    color: #000;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(65, 76, 100, 0.05);
+    padding: 20px 0 30px 0;
+    background:#11dbcf;
+  }
+  
+  .contact-box i {
+    font-size: 32px;
+    color: #fff;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .contact-box h3 {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .contact-box p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  
+ 
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  background:rgba(17, 219, 207,0.8);
+}
+.footer .btn-back{
+  background: #fff;
+  color: #00d9ff;
+}
+.footer .text{
+  color: #000;
+}
+
+
+
+

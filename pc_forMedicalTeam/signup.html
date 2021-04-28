@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign Up</title>
+  </head>
+    <title> Sign Up</title>
+
+
+<body>
+
+<div class="container">
+	<div class="header">
+		<h2>Create Account</h2>
+	</div>
+	<form id="form" class="form" action="pc_MTsignup.php" method ="post">
+	
+		<div class="form-control" >
+			<label for="username">Name</label>
+			<input type="text" placeholder="Enter your name" id="username" name="name"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			
+		</div>
+		<div class="form-control">
+			<label for="username">Email</label>
+			<input type="email" placeholder="Enter your email" id="email" name="email"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			
+		</div>
+		<div class="form-control">
+			<label for="username">Password</label>
+			<input type="password" placeholder="Enter your Password" id="password" name="newPassword" oninput="return passwordStrength()"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			
+		</div>
+		<div class="form-control">
+			<label for="username">Password check</label>
+			<input type="password" placeholder="Confirm your password" id="password2" name="confirmPassword" oninput="return samePassword()"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			
+		</div>
+		<button>Submit</button>
+		<p>Have an account already?<a href="login.html">Login</a></p>
+	</form>
+	</div>
+	
+    
+
+ <script>
+	function passwordStrength(){
+    const psw= document.getElementById('password').value;
+    
+    if(psw.length !> 7) {
+		 document.getElementById('password').innerHTML = "Password required at least 8 characters.";
+	        document.getElementById("password").style.color="Red";
+	        return("too_short");
+	 } else if(str.search(/[0-9]/)== -1){
+		document.getElementById('password').innerHTML = "Password required at least 1 numeric value.";
+	        document.getElementById("password").style.color="Red";
+	        return("no numeric value");
+	 }else if(str.search/[A-Z]/== -1){
+	       document.getElementById('password').innerHTML = "Password required at least 1 uppercase.";
+	        document.getElementById("password").style.color="Red";
+	    return("no uppercase");
+	 }else if(str.search/[!\@\#\$\%\^\&\(\)\_\+\.\,\;\:]/== -1){
+	    document.getElementById('password').innerHTML = "Password required at least 1 special character.";
+	    document.getElementById("password").style.color="Red";
+	    return("no special character");
+	  }else{
+	    document.getElementById('password').innerHTML = "Succesfully Sign Up";
+	    document.getElementById("password").style.color="Green";
+	    return("no issue");
+	   }  
+ </script>
+ 
+ <script>
+    function confirmPassword(){
+    const psw= document.getElementById('password').value;
+    const psw2= document.getElementById('password').value;
+    
+    if(psw != psw2) {
+		 document.getElementById('password').innerHTML = "Password not same";
+	        document.getElementById("password").style.color="Red";
+	        return("not same");
+	 } else {
+		document.getElementById('password').innerHTML = "Succesfully Sign Up";
+	    document.getElementById("password").style.color="Green";
+	    return("no issue");
+	</script>
+
+</body>
